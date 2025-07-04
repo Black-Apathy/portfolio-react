@@ -1,0 +1,92 @@
+header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+header img.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid var(--accent-color);
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1) saturate(0.8);
+  animation: float 8s ease-in-out infinite, pulse 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Fira Code', monospace; /* optional for terminal feel */
+  color: var(--text-color);
+}
+
+.prompt {
+  color: var(--accent-color);
+  margin-right: 0.25rem;
+  font-family: 'Fira Code', monospace;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  color: var(--accent-color);
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  color: var(--muted-text-color);
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+header .about {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--dim-text-color);
+}

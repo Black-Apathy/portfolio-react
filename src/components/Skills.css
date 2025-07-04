@@ -1,0 +1,47 @@
+.skills {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.prompt {
+  color: var(--dim-text-color);
+  font-family: monospace;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.skills h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--muted-text-color);
+  font-weight: normal;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: first baseline;
+  margin-bottom: 1rem;
+}
+
+.skill-badges span {
+  background: rgba(46, 52, 64, 0.5);
+  color: var(--accent-color);
+  font-family: monospace;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.skill-badges span:hover {
+  background: rgba(76, 86, 106, 0.7);
+  transform: translateY(-2px);
+}

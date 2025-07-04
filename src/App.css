@@ -1,0 +1,73 @@
+:root {
+  --background-color: #1b212c; /* darker than nord0 */
+  --text-color: #eceff4; /* nord6 */
+  --muted-text-color: #d8dee9; /* nord4 */
+  --accent-color: #88c0d0; /* nord8 */
+  --dim-text-color: #4c566a; /* nord3 */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Fira Code', monospace;
+}
+
+
+::selection {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  margin: clamp(2rem, 4vw, 4rem) 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--dim-text-color);
+  text-align: center;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--muted-text-color);
+  text-decoration: underline;
+}
