@@ -6,14 +6,13 @@
 .prompt {
   color: var(--dim-text-color);
   margin-right: 0.5rem;
-  font-family: monospace;
 }
-
 
 .projects h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--text-color);
+  font-family: "Inconsolata", Consolas, Menlo, Monaco, monospace;
 }
 
 .project-list {
@@ -32,9 +31,7 @@
   border: 1px solid rgba(76, 86, 106, 0.5);
   padding: 1rem;
   border-radius: 4px;
-  transition: 
-    border-color 0.3s ease, 
-    background-color 0.3s ease,
+  transition: border-color 0.3s ease, background-color 0.3s ease,
     transform 0.3s ease;
 }
 
@@ -44,7 +41,6 @@
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
 
 .project h3 {
   margin: 0;

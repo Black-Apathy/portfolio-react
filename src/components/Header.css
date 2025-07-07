@@ -16,16 +16,18 @@ header img.avatar {
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.5deg);
   }
   50% {
-    transform: translateY(-8px) rotate(1.5deg);
+    transform: translateY(-10px) rotate(1.5deg);
   }
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -33,18 +35,19 @@ header img.avatar {
   }
 }
 
-
 header h1 {
   margin: 0;
   font-size: 2.5rem;
-  font-family: 'Fira Code', monospace; /* optional for terminal feel */
+  font-family: "Inconsolata", Consolas, Menlo, Monaco, monospace;
   color: var(--text-color);
 }
 
 .prompt {
   color: var(--accent-color);
   margin-right: 0.25rem;
-  font-family: 'Fira Code', monospace;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .cursor {
@@ -59,7 +62,6 @@ header h1 {
     opacity: 0;
   }
 }
-
 
 header p {
   margin: 0.5rem 0 0;
@@ -83,6 +85,7 @@ header .about {
   margin-top: 1rem;
   padding-top: 1rem;
   font-size: 0.95rem;
+  font-family: "Inconsolata", Consolas, Menlo, Monaco, monospace;
   font-style: italic;
   line-height: 1.6;
   max-width: 600px;

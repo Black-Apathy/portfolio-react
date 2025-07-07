@@ -5,13 +5,13 @@
 
 .prompt {
   color: var(--dim-text-color);
-  font-family: monospace;
 }
 
 .skills h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--text-color);
+  font-family: "Inconsolata", Consolas, Menlo, Monaco, monospace;
 }
 
 .skills h3 {
