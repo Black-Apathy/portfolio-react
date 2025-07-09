@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <p>
         <a
-          href="/public/Deril_CV.pdf"
+          href="/Deril_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
